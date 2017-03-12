@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Century Gothic;
+}
+
+#header {
+    width: 1300px;
+    height: 80px;
+    margin: auto;
+    background: #5599ff;
+    box-shadow: 0px 4px 5px #555555;
+}
+
+h1 {
+    padding-top: 15px;
+    font-size: 36pt;
+    text-align: center;
+    color: white;
+}
+
+#select_city {
+    width: 1200px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 12pt;
+    text-align: center;
+}
+
+#day7 {
+    width: 1200px;
+    margin-left: 50px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+#ddl_cont {width: 1200px;}
+
+#ddl_city {
+    font-family: Century Gothic;
+    margin-left: 550px;
+    width: 200px;
+}
+
+.weatherIcon {
+    max-width: 50px;
+}
+
+table {
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 50px;
+    table-layout: fixed;
+}
+
+.tr {
+    height: 200px;
+}
+
+.td {
+    width: calc(100%/7);
+}
+
+#weather_icons {
+    height: 60px;
+    text-align: center;
+    font-size: 8pt;
+}
+
+#temp_graph {
+    height: 220px;
+}
+
+.bar {
+    width: calc(138px/4.5);
+    height: 220px;
+    display: inline-block;
+}
+
+.low {
+    margin-left: 34px;
+}
+
+.lb, .hb {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 26.5px;
+    height: 220px;
+    padding: 0;
+    border: 0;
+}
+
+[id^=lbar] {
+    background: #3366ee;
+}
+
+[id^=hbar] {
+    background: #ff7733;
+}
+
+[id^=lob] {
+    text-align: center;
+}
+
+[id^=hib] {
+    text-align: center;
+}
+
+.high {
+    margin-left: 4px;
+}
+
+/*div[class*="test"] {*/
+/*    background: #ffff00;*/
+/*}*/
+
+
+
+#day {
+    height: 20px;
+    text-align: center;
+    font-size: 8pt;
+    margin-top: 5px;
+}

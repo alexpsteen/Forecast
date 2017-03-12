@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <meta name="author" content="Alex Steen"/>
+        <link rel="stylesheet" href="../css/styles.css"/>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="../js/script.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Weather Forecast</h1>
+        </div>
+        
+        <div id="select_city">
+            <h2>Please choose a city from below:</h2>
+        </div>
+        
+        <div id="ddl_cont"><select id="ddl_city" onchange="getWoeids(this.value);">
+            <option id="atlanta">Atlanta, GA</option>
+            <option id="seattle">Seattle, WA</option>
+            <option id="hiltonhead">Hilton Head Is, SC</option>
+            <option id="roswell">Roswell, GA</option>
+            <option id="juneau">Juneau, AK</option>
+            <option id="wheaton">Wheaton, IL</option>
+            <option id="cincinnati">Cincinnati, OH</option>
+            <option id="chicago">Chicago, IL</option>
+            <option id="phoenix">Phoenix, AZ</option>
+            <option id="sanfrancisco">San Francisco, CA</option>
+        </select></div>
+        
+        <div id="day7"></div>
+        
+        <table>
+            <tr id="weather_icons">
+                <td><div id="icon0"/></td>
+                <td><div id="icon1"/></td>
+                <td><div id="icon2"/></td>
+                <td><div id="icon3"/></td>
+                <td><div id="icon4"/></td>
+                <td><div id="icon5"/></td>
+                <td><div id="icon6"/></td>
+            </tr>
+            <tr id="temp_graph">
+                <td><div id="temp0"/><div class="bar low"><div class="lb"><p id="lob0"></p><div id="lbar0"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib0"></p><div id="hbar0"></div></div></div></td>
+                <td><div id="temp1"/><div class="bar low"><div class="lb"><p id="lob1"></p><div id="lbar1"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib1"></p><div id="hbar1"></div></div></div></td>
+                <td><div id="temp2"/><div class="bar low"><div class="lb"><p id="lob2"></p><div id="lbar2"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib2"></p><div id="hbar2"></div></div></div></td>
+                <td><div id="temp3"/><div class="bar low"><div class="lb"><p id="lob3"></p><div id="lbar3"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib3"></p><div id="hbar3"></div></div></div></td>
+                <td><div id="temp4"/><div class="bar low"><div class="lb"><p id="lob4"></p><div id="lbar4"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib4"></p><div id="hbar4"></div></div></div></td>
+                <td><div id="temp5"/><div class="bar low"><div class="lb"><p id="lob5"></p><div id="lbar5"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib5"></p><div id="hbar5"></div></div></div></td>
+                <td><div id="temp6"/><div class="bar low"><div class="lb"><p id="lob6"></p><div id="lbar6"></div></div></div>
+                                    <div class="bar high"><div class="hb"><p id="hib6"></p><div id="hbar6"></div></div></div></td>
+            </tr>
+            <tr id="day">
+                <td><div id="day0"/></td>
+                <td><div id="day1"/></td>
+                <td><div id="day2"/></td>
+                <td><div id="day3"/></td>
+                <td><div id="day4"/></td>
+                <td><div id="day5"/></td>
+                <td><div id="day6"/></td></tr>
+        </table>
+        
+    </body>
+    
+</html>
